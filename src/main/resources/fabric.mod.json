@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "follow-along",
+	"version": "${version}",
+	"name": "Follow Along",
+	"description": "This is Tutorial Following mod",
+	"authors": [
+		"Dontouchat"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/follow-along/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dontouchat.followalong.FollowAlongMod"
+		],
+		"client": [
+			"com.dontouchat.followalong.FollowAlongModClient"
+		],
+		"fabric-datagen": [
+			"com.dontouchat.followalong.FollowAlongModDataGenerator"
+		]
+	},
+	"mixins": [
+		"follow-along.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
