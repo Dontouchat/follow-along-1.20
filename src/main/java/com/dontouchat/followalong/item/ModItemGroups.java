@@ -1,6 +1,7 @@
 package com.dontouchat.followalong.item;
 
 import com.dontouchat.followalong.FollowAlongMod;
+import com.dontouchat.followalong.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,7 @@ public class ModItemGroups {
                             .icon(() -> new ItemStack(ModItems.BROKEN_SHEARS)).entries((displayContext, entries) -> {
                                 entries.add(ModItems.PURE_MUSCLE);
                                 entries.add(ModItems.BROKEN_SHEARS);
+                                entries.add(ModBlocks.CONDENSED_WOOL);
                             }).build());
 
     public static void registerItemGroups()

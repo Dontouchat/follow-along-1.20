@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "follow-along:block/condensed_wool"
+  }
+}

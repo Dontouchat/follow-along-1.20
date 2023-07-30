@@ -1,5 +1,6 @@
 package com.dontouchat.followalong;
 
+import com.dontouchat.followalong.block.ModBlocks;
 import com.dontouchat.followalong.item.ModItemGroups;
 import com.dontouchat.followalong.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -14,6 +15,8 @@ public class FollowAlongMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
